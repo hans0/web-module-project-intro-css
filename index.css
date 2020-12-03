@@ -3,49 +3,41 @@
 /* CSS reset */
 * {
 }
-
 .container {
-	margin:0 auto;
-	/*width: 800px;*/
 	font-family: 'Roboto Mono', monospace;
-	
+	/* changing width from 850px here to 100% causes the top to not be centered anymore */
+	width:100%;
+	margin:0 auto;
 }
 .top {
+	/* original width 850px */
+	width:99%;
 	margin:0 auto;
-	border:5px solid red;
 }
 h1 {
-	border:1px solid black;
+	font-size:40px;
 	font-family: 'Chelsea Market', cursive;
 }
 header {
-	margin:0 auto;
-	border:1px solid black;
 	display:inline-block;
-	width:90%; /*700px;*/
-	/*justify-content:center;
-	vertical-align:middle;*/
+	width:850px; 
 	text-align:center;
-	
-
+	margin:0 auto;
 }
 nav {
-	border:1px solid black;
 	display:block;
 	height:30px;
-	margin: 40px 10px;
-	padding:20px;
+	width:800px;
+	padding:20px 20px;
 	margin:0 auto;
-
 }
 nav a {
 	margin:0 25px;
-	padding:20px;
+	padding:20px  5px;
 	border-radius: 20px;
 	color:#FFFFFF;
 	text-decoration:none;
 	margin-bottom:20px;
-	/*width:100px;*/
 	background:#000000;
 }
 nav a.plan {
@@ -57,22 +49,11 @@ nav a.learn {
 nav a.involved {
 	background:#FFCD69;
 }
-/*
-.logo {
-	border:1px solid black;
-	display:inline-block;
-}
-.logo img {
-	width:200px;
-	border-radius:50%;
-	padding:10px;
-	display:inline-block;
-}*/
 .top-logo {
-	border:1px solid black;
-	display:inline-block;
 	margin:0 auto;
-
+	width:850px;
+	height:250px;
+	text-align:center;
 }
 .top-logo img {
 	width:200px;
@@ -81,22 +62,19 @@ nav a.involved {
 	float:left;
 }
 .pitch {
-	border:1px solid black;
 	background-color:#DDB9A3;
 	color:#FFFFFF;
 	padding:10px 30px;
 	text-align:center;
 	width:850px;
-	
+	margin:0 auto;
 }
 .services {
-	border:1px solid black;
 	margin:0 auto;
 	width:340px;
 	text-align:center;
 }
 .services img {
-	border:1px solid black;
 	height:150px;
 	width:100%;
 	padding: 20px 0 40px 0;
@@ -108,32 +86,23 @@ nav a.involved {
 	color:#000000;
 	text-decoration:none;
 	font-weight:bold;
-
 }
 .services a:hover {
 	color:#FF0000;
-
 }
-footer {	
+.bottom-img {
+	padding:15% 0% 5% 0%;
+	/*margin: 27.5% 0 0 0;*/
+	background:url(assets/footer_img.jpg);
+	background-position:center-top;
+	background-size: cover;
+	background-repeat:no-repeat;
+}
+.bottom-nav {
 	border:1px solid black;
-	overflow:hidden;
-
+	width: 100%;
+	background-color:#F9E7DC;
 }
-/*
-footer img {
-	height:15vh;
+#clip {
 	width:100%;
-	display:block;
-}
-*/
-.image {
-	width:100%;
-	height:200px;
-	overflow:hidden;
-	object-fit:cover;
-	border:5px solid black;
-}
-
-.image img{
-	margin:0px 0px -1200px 0px;
 }
